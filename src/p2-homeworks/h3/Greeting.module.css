@@ -1,7 +1,37 @@
-.someClass {
+.greeting {
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+}
 
+.correct {
+    margin-right: 10px;
+    outline: none;
 }
 
 .error {
-    border: 1px solid red;
+    margin-right: 10px;
+    outline: none;
+}
+
+
+.button {
+    background: #bbffbb;
+    margin-right: 10px;
+}
+
+.button:disabled {
+    background: #bbffbb;
+    color: darkgray;
+    margin-right: 10px;
+}
+
+.info {
+    color: white;
+}
+
+.errorMessage {
+    margin-left: 10px;
+    height: 20px;
+    color: #ffa4c6;
 }

@@ -1,3 +1,39 @@
-.someClass {
+.content {
+    color: #bbffbb;
+    margin-bottom: 10px;
+}
 
+.button {
+    margin-left: 20px;
+    background: #bbffbb;
+}
+
+.wrapper {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.filterButton {
+    margin-right: 15px;
+    background: #bbffbb;
+}
+
+.filterButton:focus {
+    margin-right: 15px;
+    background: beige;
+}
+
+.high {
+    color: red;
+    margin-left: 15px;
+}
+
+.middle {
+    color: yellow;
+    margin-left: 15px;
+}
+
+.low {
+    color: green;
+    margin-left: 15px;
 }

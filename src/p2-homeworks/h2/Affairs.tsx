@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
-import {AffairType} from './HW2'
+import {AffairType, FilterType} from './HW2'
+import s from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
-    data: any
-    setFilter: any
-    deleteAffairCallback: any
+    data: Array<AffairType>
+    setFilter: Dispatch<SetStateAction<FilterType>>
+    deleteAffairCallback: (id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -17,20 +19,35 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {} // need to fix
-    const setHigh = () => {}
-    const setMiddle = () => {}
-    const setLow = () => {}
+    const setAll = () => {
+        props.setFilter('all')
+    } // need to fix
+    const setHigh = () => {
+        props.setFilter('high')
+    }
+    const setMiddle = () => {
+        props.setFilter('middle')
+    }
+    const setLow = () => {
+        props.setFilter('low')
+    }
 
     return (
-        <div>
+        <div className={s.wrapper}>
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            {/*<button onClick={setAll} className={s.filterButton}>All</button>*/}
+            {/*<button onClick={setHigh} className={s.filterButton}>High</button>*/}
+            {/*<button onClick={setMiddle} className={s.filterButton}>Middle</button>*/}
+            {/*<button onClick={setLow} className={s.filterButton}>Low</button>*/}
+
+            {/*Заменяю стандартные кнопки на SuperButton из ДЗ-4*/}
+
+            <SuperButton onClick={setAll} className={s.filterButton}>All</SuperButton>
+            <SuperButton onClick={setHigh} className={s.filterButton}>High</SuperButton>
+            <SuperButton onClick={setMiddle} className={s.filterButton}>Middle</SuperButton>
+            <SuperButton onClick={setLow} className={s.filterButton}>Low</SuperButton>
         </div>
     )
 }

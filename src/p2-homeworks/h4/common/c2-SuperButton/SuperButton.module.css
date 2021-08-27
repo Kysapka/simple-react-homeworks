@@ -67,7 +67,7 @@
 }
 
 .button:disabled {
-    color: #005500;
+    color: darkgrey;
     cursor: auto;
 }
 

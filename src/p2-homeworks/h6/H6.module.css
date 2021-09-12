@@ -1,0 +1,14 @@
+.H6_rootDiv {
+    color: white;
+    margin-left: 20px;
+}
+
+span {
+    display: inline-block;
+
+    height: 28px;
+    padding-top: 10px;
+
+    cursor: pointer;
+    color: #77aaff;
+}

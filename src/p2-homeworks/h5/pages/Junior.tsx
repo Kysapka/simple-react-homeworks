@@ -1,11 +1,11 @@
 import React from 'react'
+import HW7 from "../../h7/HW7";
 
 const junStyle = {
     color: "white"
 }
 
 export const Junior = () => {
-    return (
-        <div style={junStyle}>Junior</div>
-    )
+    return <HW7 />
+
 }

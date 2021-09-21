@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    min-height: 350px;
+}
+.btn {
+    order: 1;
+}
+
+.userBlock {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+}
+.userName {
+    color: white;
+}

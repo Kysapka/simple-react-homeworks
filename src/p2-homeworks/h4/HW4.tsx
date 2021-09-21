@@ -42,6 +42,7 @@ function HW4() {
 
                 <SuperButton>
                     default
+                    red
                 </SuperButton>
 
                 <SuperButton

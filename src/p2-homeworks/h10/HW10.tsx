@@ -1,5 +1,6 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import style from './HW10.module.css'
 
 function HW10() {
     // useSelector, useDispatch
@@ -12,7 +13,7 @@ function HW10() {
     };
 
     return (
-        <div>
+        <div className={style.hw10}>
             <hr/>
             homeworks 10
 

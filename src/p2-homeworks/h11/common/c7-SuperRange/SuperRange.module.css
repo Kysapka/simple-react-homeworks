@@ -1,3 +1,14 @@
 .range {
 
 }
+
+.input1 {
+    position: absolute;
+    /*margin-top: 12px;*/
+    z-index: 2;
+}
+
+.input2 {
+    position: relative;
+    z-index: 1;
+}

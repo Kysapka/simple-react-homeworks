@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/simple-react-homeworks/static/css/main.595d0b7a.chunk.css",
-    "main.js": "/simple-react-homeworks/static/js/main.c70a0ee3.chunk.js",
-    "main.js.map": "/simple-react-homeworks/static/js/main.c70a0ee3.chunk.js.map",
-    "runtime-main.js": "/simple-react-homeworks/static/js/runtime-main.f59815ab.js",
-    "runtime-main.js.map": "/simple-react-homeworks/static/js/runtime-main.f59815ab.js.map",
-    "static/js/2.7de3007a.chunk.js": "/simple-react-homeworks/static/js/2.7de3007a.chunk.js",
-    "static/js/2.7de3007a.chunk.js.map": "/simple-react-homeworks/static/js/2.7de3007a.chunk.js.map",
+    "main.css": "/simple-react-homeworks/static/css/main.f1f653ec.chunk.css",
+    "main.js": "/simple-react-homeworks/static/js/main.deade2c6.chunk.js",
+    "main.js.map": "/simple-react-homeworks/static/js/main.deade2c6.chunk.js.map",
+    "runtime-main.js": "/simple-react-homeworks/static/js/runtime-main.5a0ed468.js",
+    "runtime-main.js.map": "/simple-react-homeworks/static/js/runtime-main.5a0ed468.js.map",
+    "static/js/2.37fc6a17.chunk.js": "/simple-react-homeworks/static/js/2.37fc6a17.chunk.js",
+    "static/js/2.37fc6a17.chunk.js.map": "/simple-react-homeworks/static/js/2.37fc6a17.chunk.js.map",
     "index.html": "/simple-react-homeworks/index.html",
-    "precache-manifest.c496ecb00cc6cf6ba6fbd74237cfb962.js": "/simple-react-homeworks/precache-manifest.c496ecb00cc6cf6ba6fbd74237cfb962.js",
-    "service-worker.js": "/simple-react-homeworks/service-worker.js",
-    "static/css/main.595d0b7a.chunk.css.map": "/simple-react-homeworks/static/css/main.595d0b7a.chunk.css.map",
-    "static/js/2.7de3007a.chunk.js.LICENSE.txt": "/simple-react-homeworks/static/js/2.7de3007a.chunk.js.LICENSE.txt",
-    "static/media/SuperCheckbox.module.css": "/simple-react-homeworks/static/media/check.4e8fb437.svg"
+    "static/css/main.f1f653ec.chunk.css.map": "/simple-react-homeworks/static/css/main.f1f653ec.chunk.css.map",
+    "static/js/2.37fc6a17.chunk.js.LICENSE.txt": "/simple-react-homeworks/static/js/2.37fc6a17.chunk.js.LICENSE.txt",
+    "static/media/SuperCheckbox.module.css": "/simple-react-homeworks/static/media/check.98cd8bb6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f59815ab.js",
-    "static/js/2.7de3007a.chunk.js",
-    "static/css/main.595d0b7a.chunk.css",
-    "static/js/main.c70a0ee3.chunk.js"
+    "static/js/runtime-main.5a0ed468.js",
+    "static/js/2.37fc6a17.chunk.js",
+    "static/css/main.f1f653ec.chunk.css",
+    "static/js/main.deade2c6.chunk.js"
   ]
 }

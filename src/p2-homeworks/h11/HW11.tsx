@@ -1,18 +1,17 @@
-import React, {useState} from 'react'
-import SuperRange from './common/c7-SuperRange/SuperRange'
-import SuperDoubleRange, {valueType} from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import React, {useCallback, useState} from 'react'
+import {SuperRange} from './common/c7-SuperRange/SuperRange'
+import {SuperDoubleRange} from './common/c8-SuperDoubleRange/SuperDoubleRange'
 import style from './h11.module.css'
 
-function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+export const HW11 = React.memo(() => {
+    const [value1, setValue1] = useState(20)
+    const [value2, setValue2] = useState(60)
 
-    const onChangeRangeHandler = ([a, b]:[number, number]) => {
-        setValue1(a)
-        setValue2(b)
-    }
-
-    // let value:valueType = [value1, value2]
+    const onChangeRangeHandler = useCallback((newValues: number | number[]) => {
+            let arr = [...newValues as number[]]
+            setValue1(arr[0])
+            setValue2(arr[1])
+    },[setValue1, setValue2])
 
     return (
         <div className={style.h11}>
@@ -22,7 +21,7 @@ function HW11() {
             {/*should work (должно работать)*/}
             <div>
                 <span>{value1}</span>
-                <SuperRange value={value1} onChangeRange={setValue1}
+                <SuperRange value1={value1} onChangeRange={setValue1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
@@ -42,6 +41,6 @@ function HW11() {
             <hr/>
         </div>
     )
-}
+})
 
 export default HW11

@@ -4,8 +4,8 @@ import {SuperDoubleRange} from './common/c8-SuperDoubleRange/SuperDoubleRange'
 import style from './h11.module.css'
 
 export const HW11 = React.memo(() => {
-    const [value1, setValue1] = useState(20)
-    const [value2, setValue2] = useState(60)
+    const [value1, setValue1] = useState(0)
+    const [value2, setValue2] = useState(100)
 
     const onChangeRangeHandler = useCallback((newValues: number | number[]) => {
             let arr = [...newValues as number[]]

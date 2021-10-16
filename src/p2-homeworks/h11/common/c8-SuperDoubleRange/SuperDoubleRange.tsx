@@ -1,4 +1,4 @@
-import React, {DetailedHTMLProps, InputHTMLAttributes} from 'react'
+import React, {DetailedHTMLProps, InputHTMLAttributes, useState} from 'react'
 import s from "../c7-SuperRange/SuperRange.module.css";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
@@ -38,8 +38,10 @@ export const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = React.memo(
     //     values && onChangeRange && onChangeRange([values[0], number2])
     // }
 
+    const [stopRange, setStopRange] = useState(false)
+
     const onChangeCallback = (event: Event, newValue: valuesType) => {
-        onChangeRange && onChangeRange(newValue as number[]);
+            onChangeRange && onChangeRange(newValue as number[]);
     };
 
     const finalRangeClassName = `${s.range} ${className ? className : ''}`

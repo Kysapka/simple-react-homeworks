@@ -8,10 +8,10 @@ export const HW11 = React.memo(() => {
     const [value2, setValue2] = useState(100)
 
     const onChangeRangeHandler = useCallback((newValues: number | number[]) => {
-            let arr = [...newValues as number[]]
-            setValue1(arr[0])
-            setValue2(arr[1])
-    },[setValue1, setValue2])
+        let arr = [...newValues as number[]]
+        setValue1(arr[0])
+        setValue2(arr[1])
+    }, [setValue1, setValue2])
 
     return (
         <div className={style.h11}>
